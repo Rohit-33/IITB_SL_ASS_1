@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --primary-color: #3d3d3d;
+    --dark-color: #161616;
+    --light-color: #ffffff;
+    --text-color: #898989;
+    --bg-color: #f2f2f2;
+    --black-color: #000000;
+    --accent-color: aqua;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container_photo {
+    max-width: 1000px;
+    padding: 0 12px;
+    margin: 0 auto; 
+}
+
+header {
+    height: 100vh;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav .nav-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-right: 3rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+header nav .nav-links a:hover {
+    color: var(--text-color);
+}
+
+header nav {
+    padding: 2rem 0;
+}
+
+header nav .logo {
+    margin-right: 3rem;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.hero .left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero .left .profile-photo {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero .right {
+    flex: 2;
+    margin-left: 2rem;
+    color: var(--primary-color);
+}
+
+.hero .right h4 {
+    font-size: 1.6rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.hero .right h1 {
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero .right h1 span {
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+.hero .right .para {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+.hero .right .para li {
+    line-height: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero .right .butn {
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    border: 2px solid var(--dark-color);
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: var(--light-color);
+    color: var(--black-color);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero .right .butn:hover {
+    background: var(--dark-color);
+    color: var(--light-color);
+}
+
+.flex {
+    display: flex;
+}
+
+.center_items {
+    align-items: center;
+}
+
+.justi_bet {
+    justify-content: space-between;
+}
+
+.butn {
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.butn-prim {
+    background: var(--dark-color);
+    color: var(--light-color);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.butn-prim:hover {
+    background: var(--accent-color);
+    color: var(--dark-color);
+}
+
+footer {
+    background: var(--dark-color);
+    color: var(--light-color);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: var(--light-color);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+footer p {
+    font-size: 0.9rem;
+}
